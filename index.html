@@ -12,9 +12,27 @@
 <body>
     <header>
         <a href="index.html">
-            <h1 class="logo"></h1>
+            <h1 class="logo">Simplify</h1>
         </a>
+        
     </header>
+    <main>
+        <div class="board-builder">
+            <h2>Design your board</h2>
+            <form id="board-form">
+                <label for="numColumns">Number of Columns:</label>
+                <input type="number" name="numColumns" id="num-columns" min="1" required>
+                <div id="column-titles-container"></div>
+                <button type="submit">Create Board!</button>
+            </form>
+        </div>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
