@@ -7,9 +7,11 @@
 }
 
 body {
+    font-family: 'Play', 'Shadows Into Light';
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -27,5 +29,56 @@ header {
 .logo {
     text-decoration: none;
     font-family: 'Play', sans-serif;
-    color: darkcyan;
+    color: lightgreen;
+}
+/* Styles for main element so it displays beneath header */
+
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+
+.board-builder {
+    display: flexbox;
+    width: 90%;
+    margin: 20px;
+    background: linear-gradient( purple, seagreen);
+    align-items: center;
+}
+
+.board-builder h2 {
+    margin-bottom: 20px;
+    font-size: 200%;
+    text-align: center;
+    color: lightgreen;
+
+}
+
+form {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+#numColumns {
+    width: 50%;
+}
+
+input, label {
+    margin: 20px 30px;
+}
+
+button {
+    padding: 16px 32px;
+    margin: 5px 30px;
+    height: 60px;
+    font-family: 'Play', sans-serif;
+    border: 1px solid cyan;
+    background-color: darkblue;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: darkblue;
 }
