@@ -11,3 +11,21 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+header {
+    background-color: rgb(23, 98, 173);
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    color: darkcyan;
+}
