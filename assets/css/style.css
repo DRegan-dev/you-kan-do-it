@@ -35,23 +35,44 @@ header {
 
 main {
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 39px;
 }
 
 .board-builder {
-    display: flexbox;
-    width: 90%;
-    margin: 20px;
-    background: linear-gradient( purple, seagreen);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: seagreen;
     align-items: center;
+    text-align: center;
 }
 
 .board-builder h2 {
-    margin-bottom: 20px;
+    padding-top: 15px;
+    margin-bottom: 100px;
     font-size: 200%;
-    text-align: center;
     color: lightgreen;
 
+}
+
+.board-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.board-options {
+    background-color: aquamarine;
+    flex: 1 0 30%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    height: 200px;
+    max-width: 33%;
+    margin: 20px;
+    color: #fff;
 }
 
 form {
