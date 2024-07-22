@@ -75,31 +75,3 @@ main {
     color: #fff;
 }
 
-form {
-    height: 400px;
-    align-items: center;
-    justify-content: center;
-}
-
-#numColumns {
-    width: 50%;
-}
-
-input, label {
-    margin: 20px 30px;
-}
-
-button {
-    padding: 16px 32px;
-    margin: 5px 30px;
-    height: 60px;
-    font-family: 'Play', sans-serif;
-    border: 1px solid cyan;
-    background-color: darkblue;
-    color: #fff;
-}
-
-button:hover {
-    background-color: #fff;
-    color: darkblue;
-}
