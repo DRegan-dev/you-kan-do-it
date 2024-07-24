@@ -81,6 +81,12 @@ main {
     align-items: center;
 }
 
+.board-options:hover {
+    background-color: darkcyan;
+    color: grey;
+    border: 2px solid #fff;
+}
+
 .board-size-card {
     display: flex;
     justify-content: center;
