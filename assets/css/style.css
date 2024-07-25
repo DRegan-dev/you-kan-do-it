@@ -98,3 +98,11 @@ main {
 .board-size-card i {
     text-decoration: none;
 }
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: darkcyan;
+}
