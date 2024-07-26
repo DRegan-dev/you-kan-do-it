@@ -107,3 +107,17 @@ main {
     background-color: darkcyan;
 }
 
+#kanban-board-one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-one-kanban-column {
+    width: 25%;
+    height: 400px;
+    border: 1px solid #fff;
+    margin: 30px;
+}
+

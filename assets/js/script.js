@@ -4,7 +4,7 @@ document.getElementById('size-one').addEventListener('click', function() {
     if (true) {
         const kanbanBoard = document.createElement('div');
         kanbanBoard.id = 'kanban-board-one';
-        kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div>';
+        kanbanBoard.innerHTML = '<div class="board-one-kanban-column">Kanban Column</div>';
         document.getElementById('boardcontainer').style.display = 'flex';
         document.getElementById('boardcontainer').innerHTML = '';
         document.getElementById('boardcontainer').appendChild(kanbanBoard);
@@ -18,7 +18,7 @@ document.getElementById('size-two').addEventListener('click', function() {
     if (true) {
         const kanbanBoard = document.createElement('div');
         kanbanBoard.id = 'kanban-board-two';
-        kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div>';
+        kanbanBoard.innerHTML = '<div class="board-two-kanban-column">Kanban Column</div> <div class="board-two-kanban-column">Kanban Column 2</div>';
         document.getElementById('boardcontainer').style.display = 'flex';
         document.getElementById('boardcontainer').innerHTML = '';
         document.getElementById('boardcontainer').appendChild(kanbanBoard);
@@ -32,7 +32,7 @@ document.getElementById('size-three').addEventListener('click', function() {
     if (true) {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-three';
-            kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div>';
+            kanbanBoard.innerHTML = '<div class="board-three-kanban-column">Kanban Column</div> <div class="board-three-kanban-column">Kanban Column 2</div> <div class="board-three-kanban-column">Kanban Column 3</div>';
             document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
@@ -46,7 +46,7 @@ document.getElementById('size-four').addEventListener('click', function() {
     if (true) {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-four';
-            kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div> <div class="kanban-column">Kanban Column 4</div>';
+            kanbanBoard.innerHTML = '<div class="board-four-kanban-column">Kanban Column</div> <div class="board-four-kanban-column">Kanban Column 2</div> <div class="board-four-kanban-column">Kanban Column 3</div> <div class="board-four-kanban-column">Kanban Column 4</div>';
             document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
@@ -60,7 +60,7 @@ document.getElementById('size-five').addEventListener('click', function() {
     if (true) {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-five';
-            kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div> <div class="kanban-column">Kanban Column 4</div> <div class="kanban-column">Kanban Column 5</div>';
+            kanbanBoard.innerHTML = '<div class="board-five-kanban-column">Kanban Column</div> <div class="board-five-kanban-column">Kanban Column 2</div> <div class="board-five-kanban-column">Kanban Column 3</div> <div class="board-five-kanban-column">Kanban Column 4</div> <div class="board-five-kanban-column">Kanban Column 5</div>';
             document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
