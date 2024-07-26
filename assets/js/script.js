@@ -5,6 +5,7 @@ document.getElementById('size-one').addEventListener('click', function() {
         const kanbanBoard = document.createElement('div');
         kanbanBoard.id = 'kanban-board-one';
         kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div>';
+        document.getElementById('boardcontainer').style.display = 'flex';
         document.getElementById('boardcontainer').innerHTML = '';
         document.getElementById('boardcontainer').appendChild(kanbanBoard);
     } else {
@@ -18,6 +19,7 @@ document.getElementById('size-two').addEventListener('click', function() {
         const kanbanBoard = document.createElement('div');
         kanbanBoard.id = 'kanban-board-two';
         kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div>';
+        document.getElementById('boardcontainer').style.display = 'flex';
         document.getElementById('boardcontainer').innerHTML = '';
         document.getElementById('boardcontainer').appendChild(kanbanBoard);
     } else {
@@ -31,6 +33,7 @@ document.getElementById('size-three').addEventListener('click', function() {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-three';
             kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div>';
+            document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
     } else {
@@ -44,6 +47,7 @@ document.getElementById('size-four').addEventListener('click', function() {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-four';
             kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div> <div class="kanban-column">Kanban Column 4</div>';
+            document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
     } else {
@@ -57,6 +61,7 @@ document.getElementById('size-five').addEventListener('click', function() {
         const kanbanBoard = document.createElement('div');
             kanbanBoard.id = 'kanban-board-five';
             kanbanBoard.innerHTML = '<div class="kanban-column">Kanban Column</div> <div class="kanban-column">Kanban Column 2</div> <div class="kanban-column">Kanban Column 3</div> <div class="kanban-column">Kanban Column 4</div> <div class="kanban-column">Kanban Column 5</div>';
+            document.getElementById('boardcontainer').style.display = 'flex';
             document.getElementById('boardcontainer').innerHTML = '';
             document.getElementById('boardcontainer').appendChild(kanbanBoard);
     } else {
