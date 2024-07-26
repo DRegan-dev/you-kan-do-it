@@ -51,7 +51,7 @@ main {
 
 .board-builder h2 {
     padding-top: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 200%;
     color: lightgreen;
 
@@ -115,10 +115,19 @@ main {
 }
 
 .board-one-kanban-column {
-    width: 25%;
-    height: 400px;
+    background-color: aquamarine;
+    flex: 1 0 40%;
+    box-sizing: border-box;
     border: 1px solid #fff;
-    margin: 30px;
+    height: 600px;
+    max-width: 30%;
+    min-width: 300px;
+    margin: 20px;
+    color: darkblue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #kanban-board-two {
@@ -134,6 +143,29 @@ main {
     box-sizing: border-box;
     border: 1px solid #fff;
     height: 600px;
+    max-width: 30%;
+    min-width: 300px;
+    margin: 20px;
+    color: darkblue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kanban-board-three {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board-three-kanban-column {
+    background-color: aquamarine;
+    flex: 1 0 30%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    height: 600px;
     max-width: 33%;
     min-width: 300px;
     margin: 20px;
@@ -144,7 +176,5 @@ main {
     align-items: center;
 }
 
-#kanban-board-two {
-    
-} 
+
 
