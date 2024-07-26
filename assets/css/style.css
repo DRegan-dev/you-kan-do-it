@@ -121,3 +121,30 @@ main {
     margin: 30px;
 }
 
+#kanban-board-two {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.board-two-kanban-column {
+    background-color: aquamarine;
+    flex: 1 0 40%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    height: 600px;
+    max-width: 33%;
+    min-width: 300px;
+    margin: 20px;
+    color: darkblue;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kanban-board-two {
+    
+} 
+
