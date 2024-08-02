@@ -1,8 +1,8 @@
-// function selectedBoard(selectedId) {
-//     const boardIds = ['size-one', 'size-two', 'size-three'];
-//     boardIds.forEach(id => {
-//         document.getElementById(id).style = id === selectedId ? "border: 5px solid aquamarine" : "border: 2px solid white";
-//     });
+function selectedBoard(selectedId) {
+    // const boardIds = ['size-one', 'size-two', 'size-three'];
+    // boardIds.forEach(id => {
+    //     document.getElementById(id).style = id === selectedId ? "border: 5px solid aquamarine" : "border: 2px solid white";
+    };
 
 // const newTaskInput = document.getElementById("new-task-input");
 // newTaskInput.addEventListener("keyup", function(event) {
@@ -18,27 +18,10 @@ function enableNewTask() {
         return;
     }
 
-    const kanbanBoardOne = document.getElementById("kanban-board-one");
-    if (!kanbanBoardOne) {
-        console.log("Element 'kanban-board-one' not found.")
+    const addTaskContainer = newTaskInput.closest('.board-one-kanban-column, .board-two-kanban-column, .board-three-kanban-column')
+    if (!addTaskContainer) {
+        console.log('No active task container found.')
         return;
-    }
-
-    const kanbanBoardTwo = document.getElementById("kanban-board-two");
-    if (!kanbanBoardTwo) {
-        console.log("Element 'kanban-board-two' not found.")
-        return;
-    }
-
-    const kanbanBoardThree = document.getElementById("kanban-board-three");
-    if (!kanbanBoardThree) {
-        console.log("Element 'kanban-board-three' not found.")
-        return;
-    }
-
-    const addTask = document.getElementById("board-one-todo");
-    if (!addTask) {
-        console.log("Element 'board-one-todo' not found.")
     }
 
     newTaskInput.addEventListener("keyup", function(event) {
@@ -51,7 +34,8 @@ function enableNewTask() {
             const newTask = document.createElement('p');
             newTask.classList.add("task");
             newTask.innerText = taskValue;
-            addTask.appendChild(newTask);
+            addTaskContainer.appendChild(newTask);
+            newTaskInput.value = '';
             console.log(`New Task added: ${taskValue}`);
         }
     });
