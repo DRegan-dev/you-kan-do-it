@@ -58,6 +58,20 @@ function enableNewTask() {
             });
             newTask.appendChild(deleteButton);
 
+            // const moveButton = document.createElement('button');
+            // moveButton.innerText = "Move";
+            // moveButton.classList.add("move-btn");
+            // moveButton.addEventListener("click", function() {
+            //     const currentColumn = newTask.closest(".board-two-kanban-column, .board-three-kanaban-column");
+            //     let nextColumn;
+
+            //     if (currentColumn.classList.contains("board-two-kanban-column")) {
+            //         nextColumn = document.querySelector(".done-list");
+            //     } else if (currentColumn.classList.contains("board-three-kanban-column")) {
+            //         nextColumn = document.querySelector("in-progress-list");
+            //     } else if (currentColumn.classList)
+            // })
+
             addTaskContainer.appendChild(newTask);
             newTaskInput.value = '';
             console.log(`New Task added: ${taskValue}`);
@@ -85,7 +99,7 @@ document.getElementById('size-two').addEventListener('click', function() {
 
     const kanbanBoard = document.createElement('div');
     kanbanBoard.id = 'kanban-board-two';
-    kanbanBoard.innerHTML = '<div class="board-two-kanban-column" id="board-two-todo"><h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-two-kanban-column"><h2 class = "done-list">Done</h2></div>';
+    kanbanBoard.innerHTML = '<div class="board-two-kanban-column" id="board-two-todo"><h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-two-kanban-column"><h2 class="done-list">Done</h2></div>';
     document.getElementById('boardcontainer').style.display = 'flex';
     document.getElementById('boardcontainer').innerHTML = '';
     document.getElementById('boardcontainer').appendChild(kanbanBoard);
