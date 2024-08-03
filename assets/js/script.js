@@ -14,13 +14,13 @@ function selectedBoard(selectedId) {
 function enableNewTask() {
     const newTaskInput = document.getElementById("new-task-input");
     if (!newTaskInput) {
-        console.log("Element 'new-task-input' not found")
+        console.log("Element 'new-task-input' not found");
         return;
     }
 
-    const addTaskContainer = newTaskInput.closest('.board-one-kanban-column, .board-two-kanban-column, .board-three-kanban-column')
+    const addTaskContainer = newTaskInput.closest('.board-one-kanban-column, .board-two-kanban-column, .board-three-kanban-column');
     if (!addTaskContainer) {
-        console.log('No active task container found.')
+        console.log('No active task container found.');
         return;
     }
 
@@ -31,9 +31,33 @@ function enableNewTask() {
                 console.log("Empty task connot be added.")
                 return;
             }
-            const newTask = document.createElement('p');
+            const newTask = document.createElement('div');
             newTask.classList.add("task");
-            newTask.innerText = taskValue;
+            
+
+            const taskText = document.createElement('p');
+            taskText.innerText = taskValue;
+            newTask.appendChild(taskText);
+
+            const editButton = document.createElement('button');
+            editButton.innerText = 'Edit';
+            editButton.classList.add("edit-btn");
+            editButton.addEventListener("click", function() {
+                const newText = prompt("Edit your Text: ", taskText.innerText);
+                if (newText !== null && newText.trim() !== "") {
+                    taskText.innerText = newText.trim();
+                }
+            });
+            newTask.appendChild(editButton);
+
+            const deleteButton = document.createElement('button');
+            deleteButton.innerText = 'Delete';
+            deleteButton.classList.add("delete-btn");
+            deleteButton.addEventListener("click", function() {
+                newTask.remove();
+            });
+            newTask.appendChild(deleteButton);
+
             addTaskContainer.appendChild(newTask);
             newTaskInput.value = '';
             console.log(`New Task added: ${taskValue}`);
