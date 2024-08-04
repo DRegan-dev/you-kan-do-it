@@ -54,7 +54,10 @@ function enableNewTask() {
             deleteButton.innerText = 'Delete';
             deleteButton.classList.add("delete-btn");
             deleteButton.addEventListener("click", function() {
-                newTask.remove();
+                if (confirm("Are you sure you want to delete this task?")) {
+                    newTask.remove();
+                }
+                
             });
             newTask.appendChild(deleteButton);
 
