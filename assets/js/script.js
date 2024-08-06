@@ -73,16 +73,27 @@ function enableNewTask() {
                 moveButton.addEventListener("click", function() {
                     const currentColumn = newTask.closest(".board-two-kanban-column, .board-three-kanban-column, .in-progress-list, .done-list");
                     let nextColumn;
-
+                    console.log(currentColumn);
                     if (currentColumn.classList.contains("board-two-kanban-column")) {
                         nextColumn = document.querySelector("#kanban-board-two .done-list");
-                        buttonContainer.removeChild(moveButton);
+                        if (nextColumn) {
+                            nextColumn.appendChild(newTask);
+                            buttonContainer.removeChild(moveButton);
+                    }
 
-                    } else if (currentColumn.classList.contains("board-three-kanban-column")) {
+                    } else if (currentColumn.classList.contains("to-do-list")) {
                         nextColumn = document.querySelector("#kanban-board-three .in-progress-list");
+                        console.log("In progress");
+                        if (nextColumn) {
+                            nextColumn.appendChild(newTask);
+                        }
                     } else if (currentColumn.classList.contains('in-progress-list')) {
                         nextColumn = document.querySelector("#kanban-board-three .done-list");
-                        buttonContainer.removeChild(moveButton);
+                        if (nextColumn) {
+                            nextColumn.appendChild(newTask);
+                            
+                            buttonContainer.removeChild(moveButton);
+                        }
                     } else if (currentColumn.classList.contains('done-list')) {
                         console.log("Task is already at it's final destination");
                     
@@ -122,7 +133,7 @@ document.getElementById('size-two').addEventListener('click', function() {
 
     const kanbanBoard = document.createElement('div');
     kanbanBoard.id = 'kanban-board-two';
-    kanbanBoard.innerHTML = '<div class="board-two-kanban-column" id="board-two-todo"><h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-two-kanban-column"><h2 class="done-list">Done</h2></div>';
+    kanbanBoard.innerHTML = '<div class="board-two-kanban-column" id="board-two-todo"><h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-two-kanban-column done-list"><h2>Done</h2></div>';
     document.getElementById('boardcontainer').style.display = 'flex';
     document.getElementById('boardcontainer').innerHTML = '';
     document.getElementById('boardcontainer').appendChild(kanbanBoard);
@@ -134,7 +145,7 @@ document.getElementById('size-three').addEventListener('click', function() {
     
     const kanbanBoard = document.createElement('div');
     kanbanBoard.id = 'kanban-board-three';
-    kanbanBoard.innerHTML = '<div class="board-three-kanban-column" id="board-three-todo"> <h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-three-kanban-column"><h2 class = "in-progress-list">In Progress</h2></div> <div class="board-three-kanban-column"><h2 class="done-list">Done</h2></div>';
+    kanbanBoard.innerHTML = '<div class="board-three-kanban-column to-do-list" id="board-three-todo"> <h2 class="to-do-list">To Do</h2> <input type="text" placeholder="Enter Task here" id="new-task-input"/> </div> <div class="board-three-kanban-column in-progress-list"><h2>In Progress</h2></div> <div class="board-three-kanban-column done-list"><h2>Done</h2></div>';
     document.getElementById('boardcontainer').style.display = 'flex';
     document.getElementById('boardcontainer').innerHTML = '';
     document.getElementById('boardcontainer').appendChild(kanbanBoard);

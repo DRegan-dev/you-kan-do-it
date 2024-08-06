@@ -45,7 +45,8 @@ main {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    background-color: seagreen;
+    background: url("../images/pexels-jakkel-418831\ 3.jpg") no-repeat center center;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -54,8 +55,9 @@ main {
 .board-builder h2 {
     padding-top: 15px;
     margin-bottom: 20px;
-    font-size: 200%;
-    color: lightgreen;
+    font-size: 300%;
+    color: yellow;
+    text-shadow: 2px 2px purple;
 
 }
 
