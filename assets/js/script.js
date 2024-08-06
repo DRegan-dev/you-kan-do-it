@@ -39,6 +39,11 @@ function enableNewTask() {
             taskText.innerText = taskValue;
             newTask.appendChild(taskText);
 
+            const buttonContainer = document.createElement('div');
+                buttonContainer.classList.add("btn-container");
+
+            newTask.appendChild(buttonContainer);
+
             const editButton = document.createElement('button');
             editButton.innerText = 'Edit';
             editButton.classList.add("edit-btn");
@@ -48,7 +53,7 @@ function enableNewTask() {
                     taskText.innerText = newText.trim();
                 }
             });
-            newTask.appendChild(editButton);
+            buttonContainer.appendChild(editButton);
 
             const deleteButton = document.createElement('button');
             deleteButton.innerText = 'Delete';
@@ -59,7 +64,7 @@ function enableNewTask() {
                 }
                 
             });
-            newTask.appendChild(deleteButton);
+            buttonContainer.appendChild(deleteButton);
 
             if (!addTaskContainer.classList.contains("board-one-kanban-column")) {
                 const moveButton = document.createElement('button');
@@ -71,13 +76,13 @@ function enableNewTask() {
 
                     if (currentColumn.classList.contains("board-two-kanban-column")) {
                         nextColumn = document.querySelector("#kanban-board-two .done-list");
-                        newTask.removeChild(moveButton);
+                        buttonContainer.removeChild(moveButton);
 
                     } else if (currentColumn.classList.contains("board-three-kanban-column")) {
                         nextColumn = document.querySelector("#kanban-board-three .in-progress-list");
                     } else if (currentColumn.classList.contains('in-progress-list')) {
                         nextColumn = document.querySelector("#kanban-board-three .done-list");
-                        newTask.removeChild(moveButton);
+                        buttonContainer.removeChild(moveButton);
                     } else if (currentColumn.classList.contains('done-list')) {
                         console.log("Task is already at it's final destination");
                     
@@ -88,7 +93,7 @@ function enableNewTask() {
                         nextColumn.appendChild(newTask);
                     }
                 });
-                newTask.appendChild(moveButton);
+                buttonContainer.appendChild(moveButton);
             }
             addTaskContainer.appendChild(newTask);
             newTaskInput.value = '';

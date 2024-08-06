@@ -104,7 +104,6 @@ main {
 .board-container {
     display: none;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
     background-color: darkcyan;
 }
@@ -223,24 +222,44 @@ main {
 }
 
 .task {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     margin-bottom: 5px;
     border: 1px solid;
     background-color: cyan;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
 .edit-btn {
-    width: 50%;
     height: 100%;
     background-color: grey;
+    width: 30%;
+}
+
+.edit-btn {
+    background-color: grey;
+    width: 30%;
 }
 
 .delete-btn {
-    width: 50%;
-    height: 100%;
     background-color: grey;
+    width: 30%;
 }
 
+.move-btn {
+    background-color: grey;
+    width: 30%;
+    
+}
 @media screen and (min-width: 679px) {
     .board-builder {
         flex-direction: row;
