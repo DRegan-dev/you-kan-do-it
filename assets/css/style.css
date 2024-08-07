@@ -45,7 +45,7 @@ main {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    background: url("../images/pexels-jakkel-418831\ 3.jpg") no-repeat center center;
+    background: url("../images/pexels-jakkel-418831-3.jpg") no-repeat center center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -85,14 +85,7 @@ main {
     align-items: center;
 }
 
-.board-options:hover {
-    background-color: darkcyan;
-    color: yellow;
-    text-shadow: 2px 2px purple;
-    border: 2px solid #fff;
-}
-
-.selected {
+.board-options:hover .selected {
     background-color: darkcyan;
     color: yellow;
     text-shadow: 2px 2px purple;
