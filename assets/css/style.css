@@ -85,7 +85,7 @@ main {
     align-items: center;
 }
 
-.board-options:hover .selected {
+.board-options:hover, .board-options::after {
     background-color: darkcyan;
     color: yellow;
     text-shadow: 2px 2px purple;
