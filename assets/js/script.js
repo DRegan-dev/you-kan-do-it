@@ -78,6 +78,7 @@ function enableNewTask() {
                         nextColumn = document.querySelector("#kanban-board-two .done-list");
                         if (nextColumn) {
                             nextColumn.appendChild(newTask);
+                            buttonContainer.removeChild(editButton);
                             buttonContainer.removeChild(moveButton);
                     }
 
@@ -91,7 +92,7 @@ function enableNewTask() {
                         nextColumn = document.querySelector("#kanban-board-three .done-list");
                         if (nextColumn) {
                             nextColumn.appendChild(newTask);
-                            
+                            buttonContainer.removeChild(editButton);
                             buttonContainer.removeChild(moveButton);
                         }
                     } else if (currentColumn.classList.contains('done-list')) {
