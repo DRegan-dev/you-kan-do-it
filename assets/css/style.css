@@ -92,6 +92,13 @@ main {
     border: 2px solid #fff;
 }
 
+.selected {
+    background-color: darkcyan;
+    color: yellow;
+    text-shadow: 2px 2px purple;
+    border: 2px solid #fff;
+}
+
 .board-size-card {
     display: flex;
     justify-content: center;

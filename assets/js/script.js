@@ -1,15 +1,22 @@
-function selectedBoard(selectedId) {
-    // const boardIds = ['size-one', 'size-two', 'size-three'];
-    // boardIds.forEach(id => {
-    //     document.getElementById(id).style = id === selectedId ? "border: 5px solid aquamarine" : "border: 2px solid white";
-    };
+function selectedOne() {
+    document.getElementById('board-one').classList.add('selected');
+    document.getElementById('board-two').classList.remove('selected');
+    document.getElementById('board-three').classList.remove('selected');
+}
 
-// const newTaskInput = document.getElementById("new-task-input");
-// newTaskInput.addEventListener("keyup", function(event) {
-//     if (event.key === "Enter") {
-//         console.log("Hello World!")
-//     }
-// });
+function selectedTwo() {
+    document.getElementById('board-one').classList.remove('selected');
+    document.getElementById('board-two').classList.add('selected');
+    document.getElementById('board-three').classList.remove('selected');
+}
+
+function selectedThree() {
+    document.getElementById('board-one').classList.remove('selected');
+    document.getElementById('board-two').classList.remove('selected');
+    document.getElementById('board-three').classList.add('selected');
+}
+
+
 
 function enableNewTask() {
     const newTaskInput = document.getElementById("new-task-input");
