@@ -11,31 +11,33 @@
 </head>
 <body>
     <header>
+        <!-- Navigation header with logo -->
         <a href="index.html">
             <h1 class="logo">Simplify</h1>
         </a>
         
     </header>
     <main>
+        <!-- Main content section for selecting and displaying boards -->
         <div class="board-builder">
             <h2>Choose your board</h2>
-        
+            <!-- Container for board size options -->
             <div class="board-options-container">
-                
+                <!-- Bord option for first board size -->
                 <div class="board-options" id="board-one">
                     <div class="board-size-card" id="size-one" onclick="selectedOne()">
                         <i class="fa-solid fa-1"></i>
                     </div>
                 </div>
                 
-                
+                <!-- Board option for second board size -->
                 <div class="board-options" id="board-two">
                     <div class="board-size-card" id="size-two" onclick="selectedTwo()">
                         <i class="fa-solid fa-2"></i>
                     </div>
                 </div>
                 
-                
+                <!-- Board option for the third board size -->
                 <div class="board-options" id="board-three">
                     <div class="board-size-card" id="size-three" onclick="selectedThree()">
                         <i class="fa-solid fa-3"></i>
@@ -44,7 +46,7 @@
                 
             </div>
         </div>
-
+        <!-- COntainer where the selected board will be displayed -->
         <div class="board-container" id="boardcontainer"></div>
 
     </main>
