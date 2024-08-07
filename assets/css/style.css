@@ -116,10 +116,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg, mediumaquamarine, lightseagreen, rgb(12, 103, 103), lightseagreen, mediumaquamarine );
 }
 
 .board-one-kanban-column {
-    background-color: aquamarine;
+    background-color: mediumturquoise;
     flex: 1 0 40%;
     box-sizing: border-box;
     border: 1px solid #fff;
@@ -134,6 +135,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: flex-start;
+    overflow: auto;
     
 }
 
@@ -146,7 +148,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(90deg, rgb(2, 241, 98), lightseagreen, rgb(12, 103, 103), lightseagreen, rgb(2, 241, 98) );
+    background: linear-gradient(90deg, mediumaquamarine, lightseagreen, rgb(12, 103, 103), lightseagreen, mediumaquamarine );
+    
 }
 
 .board-two-kanban-column {
@@ -165,6 +168,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: flex-start;
+    overflow: auto;
 }
 
 .board-two-kanban-column h2 {
@@ -176,7 +180,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: (90deg, lightseagreen, forestgreen, cadetblue, forestgreen, lightseagreen);
+    background: linear-gradient(90deg, mediumaquamarine, lightseagreen, rgb(12, 103, 103), lightseagreen, mediumaquamarine );
 }
 
 #to-do-form {
@@ -218,6 +222,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: flex-start;
+    overflow: auto;
 }
 
 #new-task-input {
@@ -227,14 +232,14 @@ main {
 }
 
 .task {
+    color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin-bottom: 5px;
-    border: 2px solid purple;
-    background: linear-gradient(90deg, transparent, purple, transparent );
+    background: linear-gradient(90deg, transparent, darkcyan, transparent);
 
 }
 
