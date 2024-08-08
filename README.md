@@ -32,21 +32,24 @@ The colors used in this website were selected based on the hero image and the co
 ### Wireframes 
 <details>
   <summary>Desktop Wireframe</summary>
-  [Desktop Wireframe](./assets/images/simplify-wireframe-hero.jpg)
-  [Desktop Wireframe](.assets/images/simplify-board-one.jpg)
-  [Desktop Wireframe](.assets/images/simplify-board-two.jpg)
-  [Desktop Wireframe](./assets/images/simplify-board-three.jpg)
+  
+  ![Desktop Wireframe](./assets/images/simplify-wireframe-hero.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-one.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-two.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-three.jpg)
 </details>
 <details>
   <summary>Mobile Wireframes</summary>
-  [Mobile Wireframe](./assets/images/simplify-mobile-hero.jpg)
-  [Mobile Wireframe](./assets/images/simplify-mobile-board-one.jpg)
-  [Mobile Wireframe](./assets/images/simplify-mobile-board-two.jpg)
-  [Mobile Wireframe](./assets/images/simplify-mobile-board-three.jpg)
+  
+  ![Mobile Wireframe](./assets/images/simplify-mobile-hero.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-one.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-two.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-three.jpg)
 </details>
 <details>
   <summary>Task Layout</summary>
-  [Task Layout Wireframe](./assets/images/simplify-task-layout.jpg)
+  
+  ![Task Layout Wireframe](./assets/images/simplify-task-layout.jpg)
 </details>
 
 ## Features 
@@ -54,34 +57,43 @@ The colors used in this website were selected based on the hero image and the co
 ### Navigation 
 The Navigation bar is simplistic in design and only contains the logo for the website which is just the name "Simplify
 
-[Navigation Bar](./assets/images/simplify-header.png)
+![Navigation Bar](./assets/images/simplify-header.png)
 
 ### Langing page
 -The landing page include an eye cathing hero image and cover text advising the user to choose their baord. 
 -Underneath the cover text there are 3 equally sized boxes containing the number 1 to 3. 
 -Upon click these boxes the user will be presented with a kanban board with the number of columns that aligns with the number in the box they clicked.
 
-[Landing page](./assets/images/simplify-hero-section.jpg)
+![Landing page](./assets/images/simplify-hero-section.png)
 
 - As the user scrolls they are presented with a kanban board consisting of one column, two columns or three columns.
 - At the top of each to do list there is a text input where the user can enter in the tasks they need to organize.
 - each column is identical in size and appearence except for the the text input on the todo list.
 
-[Kanban Board One](./assets/images/simplify-one-column.jpg)
-[Kanban Board Two](./assets/images/simplify-two-column.jpg)
-[Kanban Board Three](./assets/images/simplify-three-column.jpg)
+![Board One Selected](./assets/images/simplify-one-selected.png)
+
+![Kanban Board One](./assets/images/simplify-one-column.png)
+
+![Board Two Selected](./assets/images/simplify-twoo-selected.png)
+
+![Kanban Board Two](./assets/images/simplify-two-columns.png)
+
+![Board Three Selected](./assets/images/simplify-three-selected.png)
+
+![Kanban Board Three](./assets/images/simplify-three-columns.png)
 
 ### Features left to implement
 - Move backwards functionality between columns
+- Save functionality so user can move between board types without information being deleted
 - Differently designed boards
 
 ## Testing
 
 ### Validator Testing
 -**HTML Validator**
-"Document checking completed. No errors or warnings to show."
+-"Document checking completed. No errors or warnings to show."
 
-[W3C Validator Web Page Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdregan-dev.github.io%2Fyou-kan-do-it%2F)
+-[W3C Validator Web Page Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdregan-dev.github.io%2Fyou-kan-do-it%2F)
 
 -**CSS Validator**
 "Congratulations! No Error Found."
@@ -91,8 +103,70 @@ The Navigation bar is simplistic in design and only contains the logo for the we
 "20 Warnings, 0 Errors"
 JS Hint
 
-## Accessibility
+### Accessibility
 This Site received a lighthouse rating of 100% accross the board. 
-[Lighthouse Web Page Results](./assets/images/simplify-lighthouse-results.png)
+![Lighthouse Web Page Results](./assets/images/simplify-lighthouse-result.png)
+
+### Links Testing
+All interactive elements of this website were tested manually to ensure correct functionality and no errors were reported.
+
+### Browser Testing
+The website was tested on Google Chrome, Firefox, Microsoft Edge and Sfari browsers with no issues noted.
+
+### Friends and Family testing 
+Friends and family were asked the review the site and documentation to point out any bugs and/or user experience issues.
+
+### Known Bugs
+Hero image can on occasion not load. Every effort has been taken to ensure that file path is correct. However the issue will occasionally occur. 
+
+## Technologies Used
+
+### Languages
+-HTML5
+-CSS
+-JAVASCRIPT
+
+### Frameworks - Libraries - Programs used
+- [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+- Pen and paper wireframes
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
+- [GitHub](https://github.com/) - Used for version control and hosting.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [JS Hint](https://jshint.com/) - Used for JavaScript Validation.
+
+
+## Deployment
+
+The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [Simplify](https://dregan-dev.github.io/you-kan-do-it/))
+
+## Credits
+
+### Content
+-All of the content on this webpage was self generated except for the hero image. 
+
+### Media
+ The hero image used was gotten from the below website.
+ -[Pexels](www.pexels.com/)
+
+### Resources Used
+General coding concepts for this project were researched using:
+-[W3Schools](https://www.w3schools.com/)
+-[Stack Overflow](https://stackoverflow.com/)
+-The Add task function was adapted from code on this Stack Overflow thread [Stack Overflow](https://stackoverflow.com/questions/7060750/detect-the-enter-key-in-a-text-input-field)
+
+## Acknowledgments
+My mentor Antonio for being a pillar of support and fountain of sage advice. 
 
 
