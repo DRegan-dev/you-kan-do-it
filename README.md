@@ -1,131 +1,172 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Simplify
 
-Welcome Damien Regan,
+Simplify is a website that aims to provide users with a simple and interactive to do list that can adapt to the users needs and organization. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+A live link to the website can be found here [Simplify] (https://dregan-dev.github.io/you-kan-do-it/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## Site Owner Goals 
+- To provide the user with a website that is easy to navigate and fully responsive
+- To provide the user with everything they would need to set up a list of reminders, a daily to do list or a task manager for larger projects.
 
-## Gitpod Reminders
+## User Stories 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### First Time User
+- As a first time user, I want to easily understand the main purpose of the website and quickly be able to start organizing my tasks
+- As a first time user, I want to be able to navigate the website easily and have a positive emotional response to it's design and usability
 
-`python3 -m http.server`
+### Frequent User
+- As a frequent user, I want to be able to access a quick and easy task organization tool that is reliable and well designed
+- I want to be able to interact with my tasks in such a way that i can create, read, update and delete tasks as needed
 
-A blue button should appear to click: _Make Public_,
+## Design 
 
-Another blue button should appear to click: _Open Browser_.
+### Imagery 
+The use of imagery on the simplify website is very minimal and used only to give the sense of calm as the user begins to organize their tasks.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### Colors
+The colors used in this website were selected based on the hero image and the colors therein. A sixties/seventies movie credits style was captured on the hero image and was implemented through out the Kanban boards appropriately. 
 
-A blue button should appear to click: _Make Public_,
+### Fonts 
+'Play' was used for the logo and text througout the website due to its formal but yet relaxed appearance.
 
-Another blue button should appear to click: _Open Browser_.
+### Wireframes 
+<details>
+  <summary>Desktop Wireframe</summary>
+  
+  ![Desktop Wireframe](./assets/images/simplify-wireframe-hero.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-one.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-two.jpg)
+  ![Desktop Wireframe](./assets/images/simplify-board-three.jpg)
+</details>
+<details>
+  <summary>Mobile Wireframes</summary>
+  
+  ![Mobile Wireframe](./assets/images/simplify-mobile-hero.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-one.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-two.jpg)
+  ![Mobile Wireframe](./assets/images/simplify-mobile-board-three.jpg)
+</details>
+<details>
+  <summary>Task Layout</summary>
+  
+  ![Task Layout Wireframe](./assets/images/simplify-task-layout.jpg)
+</details>
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Features 
 
-To log into the Heroku toolbelt CLI:
+### Navigation 
+The Navigation bar is simplistic in design and only contains the logo for the website which is just the name "Simplify
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Navigation Bar](./assets/images/simplify-header.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Langing page
+-The landing page include an eye cathing hero image and cover text advising the user to choose their baord. 
+-Underneath the cover text there are 3 equally sized boxes containing the number 1 to 3. 
+-Upon click these boxes the user will be presented with a kanban board with the number of columns that aligns with the number in the box they clicked.
 
-### Connecting your Mongo database
+![Landing page](./assets/images/simplify-hero-section.png)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+- As the user scrolls they are presented with a kanban board consisting of one column, two columns or three columns.
+- At the top of each to do list there is a text input where the user can enter in the tasks they need to organize.
+- each column is identical in size and appearence except for the the text input on the todo list.
 
-------
+![Board One Selected](./assets/images/simplify-one-selected.png)
 
-## Release History
+![Kanban Board One](./assets/images/simplify-one-column.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Board Two Selected](./assets/images/simplify-twoo-selected.png)
 
-**June 18, 2024,** Add Mongo back into template
+![Kanban Board Two](./assets/images/simplify-two-columns.png)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+![Board Three Selected](./assets/images/simplify-three-selected.png)
 
-**May 28 2024:** Fix Mongo and Links installs
+![Kanban Board Three](./assets/images/simplify-three-columns.png)
 
-**April 26 2024:** Update node version to 16
+### Features left to implement
+- Move backwards functionality between columns
+- Save functionality so user can move between board types without information being deleted
+- Differently designed boards
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Testing
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Validator Testing
+-**HTML Validator**
+-"Document checking completed. No errors or warnings to show."
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-[W3C Validator Web Page Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdregan-dev.github.io%2Fyou-kan-do-it%2F)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+-**CSS Validator**
+"Congratulations! No Error Found."
+[CSS Validator Web Page Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdregan-dev.github.io%2Fyou-kan-do-it%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-**JS Validator**
+"20 Warnings, 0 Errors"
+JS Hint
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Accessibility
+This Site received a lighthouse rating of 100% accross the board. 
+![Lighthouse Web Page Results](./assets/images/simplify-lighthouse-result.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Links Testing
+All interactive elements of this website were tested manually to ensure correct functionality and no errors were reported.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Browser Testing
+The website was tested on Google Chrome, Firefox, Microsoft Edge and Sfari browsers with no issues noted.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Friends and Family testing 
+Friends and family were asked the review the site and documentation to point out any bugs and/or user experience issues.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Known Bugs
+Hero image can on occasion not load. Every effort has been taken to ensure that file path is correct. However the issue will occasionally occur. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Languages
+-HTML5
+-CSS
+-JAVASCRIPT
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Frameworks - Libraries - Programs used
+- [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+- Pen and paper wireframes
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer.
+- [GitHub](https://github.com/) - Used for version control and hosting.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [JS Hint](https://jshint.com/) - Used for JavaScript Validation.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Deployment
 
-------
+The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
 
-## FAQ about the uptime script
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
 
-**Why have you added this script?**
+The live link can be found here - [Simplify](https://dregan-dev.github.io/you-kan-do-it/))
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Credits
 
-**How will this affect me?**
+### Content
+-All of the content on this webpage was self generated except for the hero image. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Media
+ The hero image used was gotten from the below website.
+ -[Pexels](www.pexels.com/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Resources Used
+General coding concepts for this project were researched using:
+-[W3Schools](https://www.w3schools.com/)
+-[Stack Overflow](https://stackoverflow.com/)
+-The Add task function was adapted from code on this Stack Overflow thread [Stack Overflow](https://stackoverflow.com/questions/7060750/detect-the-enter-key-in-a-text-input-field)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Acknowledgments
+My mentor Antonio for being a pillar of support and fountain of sage advice. 
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
