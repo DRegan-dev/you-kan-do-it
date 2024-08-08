@@ -82,6 +82,27 @@ The Navigation bar is simplistic in design and only contains the logo for the we
 
 ![Kanban Board Three](./assets/images/simplify-three-columns.png)
 
+- To add a task the user selects the text input in the Reminders column on board one and the To Do column on boards two and three
+- Once they hit enter the task is added to the Reminder column or To Do column
+- Underneath the text content of the Task they user is also given three buttons, Edit, Delete and Move.
+
+![Added Tasks](./assets/images/simplify-todo-task-list.png)
+
+- When the delete button is selected, the user has to confirm that they wish to delete the task to which that delete button is assigned.
+
+![Delete user-interface](./assets/images/simplify-delete-ui.png)
+
+- When the Edit button is selected, the user is presented with an insterface to update the text of task to which the selected edit button is assigned.
+
+![Edit User Interface](./assets/images/simplify-edit-ui.png)
+  
+- When the Move button is selected on board two or three, the task is moved to the next subsequent column
+- When it reaches the Done column, options to edit or move are removed from the users choices as those option could potentially cause confusion and errors to occur.
+
+![Done Task](./assets/images/simplify-done-list-task.png)
+
+
+
 ### Features left to implement
 - Move backwards functionality between columns
 - Save functionality so user can move between board types without information being deleted
