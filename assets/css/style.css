@@ -149,7 +149,7 @@ main {
 
 .board-one-kanban-column h2 {
     font-size: 200%;
-    border-bottom: 2px solid fff;
+    border-bottom: 2px solid #fff;
 }
 
 #kanban-board-two {
